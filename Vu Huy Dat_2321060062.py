@@ -37,7 +37,7 @@ else:
     st.write("Biểu đồ số lượng phim theo thể loại:")
     plt.figure(figsize=(10, 6))
     plt.bar(genre_counts.index, genre_counts, color='lightgreen', edgecolor='black')
-
+    plt.plot(genre_counts, selected_genres)
     
     plt.xlabel('Thể loại (Genre)')
     plt.ylabel('Số lượng phim')
