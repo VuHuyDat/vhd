@@ -38,13 +38,6 @@ else:
     plt.figure(figsize=(10, 6))
     plt.bar(genre_counts.index, genre_counts, color='lightgreen', edgecolor='black')
 
-    st.subheader("Điểm đánh giá trung bình theo năm")
-    avg_score_by_year = movies_data.groupby('year')['score'].mean().reset_index()
-
-    fig1, ax1 = plt.subplots(figsize=(12, 5))
-    plt.lineplot(movies_data=avg_score_by_year, x='year', y='score', ax=ax1, marker='o', color='orange')
-    ax1.set_title("Score trung bình theo năm")
-    st.pyplot(fig1)
     
     plt.xlabel('Thể loại (Genre)')
     plt.ylabel('Số lượng phim')
