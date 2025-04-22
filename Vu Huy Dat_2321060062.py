@@ -36,7 +36,7 @@ else:
     # Vẽ biểu đồ cột
     st.write("Biểu đồ số lượng phim theo thể loại:")
     plt.figure(figsize=(10, 6))
-    plt.bar(genre_counts.index, genre_counts, color='lightgreen', edgecolor='black')
+    plt.bar(genre_counts.index, genre_counts, color='lightgreen', edgecolor='black', autopct = "%1.1f%%")
     
     plt.xlabel('Thể loại (Genre)')
     plt.ylabel('Số lượng phim')
