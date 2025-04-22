@@ -43,5 +43,5 @@ else:
     plt.ylabel('Số lượng phim')
     plt.title('Số lượng phim theo thể loại')
     plt.xticks(rotation=45)
-    plt.grid(True, axis='y', linestyle='--', alpha=0.7)
+    plt.grid()
     st.pyplot(plt)
